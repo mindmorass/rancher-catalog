@@ -9,7 +9,7 @@ vxlan:
       name: vxlan
       host_ports: true
       subnets:
-      - network_address: '10.42.0.0/16'
+      - network_address: '192.16.0.0/16'
       dns:
       - 169.254.169.250
       dns_search:
@@ -19,7 +19,7 @@ vxlan:
         name: rancher-cni-network
         type: rancher-bridge
         bridge: docker0
-        bridgeSubnet: '10.42.0.0/16'
+        bridgeSubnet: '192.16.0.0/16'
         isDefaultGateway: true
         hairpinMode": true
         hostNat: true
